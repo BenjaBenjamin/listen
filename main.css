@@ -1,0 +1,105 @@
+section_1 h1 {
+  color: black;
+  text-align: center;
+  border: solid;
+  width: 10vw;
+  margin: auto;
+}
+
+section_1 h2 {
+  color: black;
+  font-size: 3rem;
+  border: solid;
+  width: 30vw;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2vw;
+}
+
+section_1 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+.remove {
+  display: none;
+}
+
+.notValid {
+  background: red;
+}
+.edit {
+}
+.overskrift h1 {
+  text-align: center;
+  border: solid;
+  width: 30vw;
+  font-size: 4rem;
+}
+.overskrift h2 {
+  text-align: center;
+  border: solid;
+  width: 30vw;
+  font-size: 3rem;
+}
+
+.overskrift {
+  display: grid;
+  justify-content: center;
+}
+
+#addForm {
+}
+
+#app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: ". . ." ". . ." ". . .";
+  margin: 5vw;
+  justify-content: center;
+}
+
+.liste {
+  border: solid;
+  margin: 2vw;
+  display: grid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  font-size: 1.5rem;
+  margin: 0.5vw;
+  margin-left: 0.4vw;
+  font-weight: 200;
+}
+
+.btnDelete {
+  height: 2vw;
+  width: 50%;
+  font-size: 1rem;
+}
+.btnEdit {
+  height: 2vw;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.knapper {
+  display: flex;
+  margin: 1vw;
+}
+/*# sourceMappingURL=main.css.map */

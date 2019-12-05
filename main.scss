@@ -1,0 +1,43 @@
+section_1 {
+  h1 {
+    color: black;
+    text-align: center;
+    border: solid;
+    width: 10vw;
+    margin: auto;
+  }
+  h2 {
+    color: black;
+    font-size: 3rem;
+    border: solid;
+    width: 30vw;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2vw;
+  }
+}
+
+#add {
+  button {
+    width: 5vw;
+    position: absolute;
+    right: 2%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .remove {
+    display: none;
+  }
+
+  .notValid {
+    background: red;
+  }
+}
+
+section_1 {
+  display: grid;
+  justify-content: center;
+}

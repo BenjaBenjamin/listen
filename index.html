@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="overskrift">
+      <h1>Karnevalspil.dk</h1>
+      <h2>Liste over halvt abonnerende</h2>
+      <button class="rediger">rediger brugere</button>
+      <button class="færdig">færdig med rediger</button>
+    </div>
+
+    <form id="addForm" class="add">
+      <label>name</label><input type="text" name="name" /> <label>Email</label
+      ><input type="email" name="email" />
+      <button type="submit" name="submit">Opret</button>
+    </form>
+
+    <form id="editForm" class="remove">
+      <label>Navn</label><input type="text" name="name" /> <label>Email</label
+      ><input type="email" name="email" />
+      <input type="hidden" name="id" />
+      <button type="submit" name="submit" class="knap">
+        rediger Brugernavn
+      </button>
+    </form>
+
+    <div id="app"></div>
+    <template>
+      <article class="liste">
+        <h1></h1>
+        <h2></h2>
+        <div class="knapper">
+          <button class="btnDelete">Slet bruger</button>
+          <button class="btnEdit">Rediger bruger</button>
+        </div>
+      </article>
+    </template>
+    <script src="index.js"></script>
+  </body>
+</html>
