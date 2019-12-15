@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="overskrift">
+      <h1>Karnevalspil.dk</h1>
+      <h2>Liste over fuld abonnerende</h2>
+      <button class="rediger">rediger brugere</button>
+      <button class="færdig">færdig med rediger</button>
+    </div>
+
+    <form id="addForm" class="remove">
+      <label>CPR</label><input type="number" name="cpr" /> <label>Navn</label
+      ><input type="text" name="name" /> <label>Efternavn</label
+      ><input type="text" name="lastname" /> <label>Brugernavn</label
+      ><input type="text" name="username" /> <label>Mobil</label
+      ><input type="number" name="mobile" /> <label>Adresse</label
+      ><input type="text" name="address" /> <label>Køn</label
+      ><input type="text" name="gender" />
+      <label>Forventet månedligt forbrug</label
+      ><input type="number" name="estimated" />
+      <button type="submit" name="submit">Opret</button>
+    </form>
+
+    <form id="editForm" class="remove">
+      <label>CPR</label><input type="tel" name="cpr" /> <label>Navn</label
+      ><input type="text" name="name" /> <label>Efternavn</label
+      ><input type="text" name="lastname" /> <label>Brugernavn</label
+      ><input type="text" name="username" /> <label>Mobil</label
+      ><input type="tel" name="mobile" /> <label>Adresse</label
+      ><input type="text" name="address" /> <label>Køn</label
+      ><input type="text" name="gender" />
+      <label>Forventet månedligt forbrug</label
+      ><input type="tel" name="estimated" />
+      <input type="hidden" name="id" />
+      <button type="submit" name="submit" class="knap">
+        rediger Brugernavn
+      </button>
+    </form>
+
+    <div id="app"></div>
+    <template>
+      <article class="liste">
+        <div class="text1">
+          <p>Cpr:</p>
+          <h1></h1>
+        </div>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+        <h7></h7>
+        <h8></h8>
+        <div class="knapper">
+          <button class="btnDelete">Slet bruger</button>
+          <button class="btnEdit">Rediger bruger</button>
+        </div>
+      </article>
+    </template>
+    <script src="index.js"></script>
+  </body>
+</html>
